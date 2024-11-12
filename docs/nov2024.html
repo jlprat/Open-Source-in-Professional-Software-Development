@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Open Source in Professional Environment</title>
+
+	<link rel="stylesheet" href="reveal.js/dist/reset.css">
+	<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+	<link rel="stylesheet" href="reveal.js/dist/theme/sky.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+	<style type="text/css">
+		.reveal,
+		.reveal h2,
+		.reveal h3 {
+			font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif !important;
+			--r-main-font-size: 40px !important;
+			--r-block-margin: 20px !important;
+			--r-heading-margin: 0 0 20px 0 !important;
+			--r-heading-font: Palatino Linotype, Book Antiqua, Palatino, FreeSerif, serif !important;
+			--r-heading-line-height: 1.2 !important;
+			--r-heading-letter-spacing: normal !important;
+			--r-heading-text-transform: none !important;
+			--r-heading-text-shadow: none !important;
+			--r-heading-font-weight: normal !important;
+			--r-heading1-text-shadow: none !important;
+			--r-heading1-size: 3.77em !important;
+			--r-heading2-size: 2.11em !important;
+			--r-heading3-size: 1.55em !important;
+			--r-heading4-size: 1em !important;
+		}
+
+		.reveal code:not(.hljs) {
+			color: #452ee2;
+			font-weight: bold;
+		}
+
+		.reveal small.disclaimer {
+			font-size: 18px;
+		}
+
+		.reveal pre {
+			width: 100%;
+		}
+
+		.top_left {
+			position: absolute;
+			top: -150px;
+			right: 10px;
+			max-width: 340px !important;
+		}
+
+		.top_left_slide {
+			position: absolute;
+			top: -150px;
+			right: 10px;
+			width: 40%;
+		}
+
+		.white_smoke_shadow {
+			color: whitesmoke !important;
+			text-shadow: 1px 1px 20px black !important;
+		}
+
+		.white_smoke_background {
+			color: whitesmoke !important;
+			background-color: rgba(28, 27, 27, 0.7);
+			padding: 0 30px;
+			width: fit-content;
+		}
+
+		.portrait {
+			height: 200px;
+			height: 200px;
+			position: absolute;
+			top: -50px;
+			right: 20px;
+		}
+
+		.reveal h3 {
+			font-weight: bold;
+		}
+
+		.hljs-comment,
+		.hljs-quote,
+		.hljs-deletion,
+		.hljs-meta {
+			color: #31d701;
+		}
+
+		footer {
+			position: absolute;
+			bottom: 40px;
+			left: 50px;
+		}
+
+		.green {
+			color: green;
+		}
+
+		.red {
+			color: red;
+		}
+
+		.reveal blockquote {
+			background: rgba(255, 255, 255, 0.5);
+		}
+
+		.print-pdf footer {
+			position: absolute;
+			bottom: -406px;
+			left: 50px;
+		}
+
+		.print-pdf .top_left {
+			position: relative;
+			top: 0;
+			left: 244px;
+			max-width: 340px !important;
+		}
+
+		.print-only {
+			display: none;
+		}
+
+		.print-pdf .print-only {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img src="images/aiven-logo_RGB.png" alt="Aiven Logo" class="top_left">
+				<h2><b>Open Source</b></h2>
+				<h3>In professional software development</h3>
+				<footer class="print-only">
+					Josep Prat &mdash; @jlprat &mdash; @aiven_io
+				</footer>
+			</section>
+			<section>
+				<h3>Outline</h3>
+				<ul>
+					<li>What is Open Source?</li>
+					<li>Getting started</li>
+					<li>Open Source at work?</li>
+				</ul>
+			</section>
+			<section data-background="images/devtraits.jpg">
+				<h3 class="white_smoke_shadow">What is Open Source?</h3>
+			</section>
+			<section>
+				<blockquote><b>Open Source:</b> is computer software that is released under a license in which the copyright
+					holder grants users the rights to use,
+					study, change, and distribute the software and its source code to anyone and for any purpose.</blockquote>
+			</section>
+			<section>
+				<h3>Some well known Open Source Projects:</h3>
+				<ul>
+					<li class="fragment">GNU/Linux</li>
+					<li class="fragment">VLC</li>
+					<li class="fragment">Chromium</li>
+					<li class="fragment">Node.js</li>
+				</ul>
+			</section>
+			<section>
+				<h3>What is a license?</h3>
+				<p>A license is the legal contract between the project creators and its end user.</p>
+				<p>Licenses in Open Source are used to define the distribution mechanisms, liability, limitations of warranty,
+					including protection of the developer's intellectual property.</p>
+			</section>
+			<section>
+				<h3>Some common licenses:</h3>
+				<ul>
+					<li class="fragment">Apache License v2</li>
+					<li class="fragment">MIT</li>
+					<li class="fragment">GPL v3 (and derivatives)</li>
+					<li class="fragment">and many more&hellip; <a href="https://opensource.org/licenses/" target="_blank"
+							rel="noopener noreferrer">https://opensource.org/licenses/</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3>Free to use:</h3>
+				<p>No restriction on how the software should be used.</p>
+			</section>
+			<section>
+				<h3>Free to modify:</h3>
+				<p>Derived works are allowed.</p>
+			</section>
+			<section>
+				<h3>Free to inspect:</h3>
+				<p>Source code is distributed with the program (or library).</p>
+			</section>
+			<section>
+				<h3>Free to redistribute:</h3>
+				<p>Software can be sold or given away.</p>
+			</section>
+			<section>
+				<h3>Examples of not really Open Source Projects:</h3>
+				<ul>
+					<li class="fragment">Redis</li>
+					<li class="fragment">MongoDB</li>
+					<li class="fragment">Chrome</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Why?</h3>
+				<p>Redis and MongoDB restrict usage in some way, while Chrome is not even Open Source.</p>
+			</section>
+			<section>
+				<h3>What is Open Source about?</h3>
+				<p>Legalities cleared, Open Source is about community: collaboration, and working with others to reach something
+					bigger.</p>
+			</section>
+			<section>
+				<h3>How OSS can benefit you?</h3>
+				<ul>
+					<li class="fragment">Improve your programming skills</li>
+					<li class="fragment">Improve your non-technical skills</li>
+					<li class="fragment">Learn new tools or frameworks</li>
+					<li class="fragment">Have an online portfolio</li>
+					<li class="fragment">Make connections</li>
+				</ul>
+			</section>
+			<section data-background="images/blackboard.jpg">
+				<h2 class="white_smoke_shadow"><b>Getting started</b></h2>
+			</section>
+			<section>
+				<h3>Sounds cool, but&hellip;</h3>
+				<p class="fragment">No no! Anyone can contribute to Open Source. One doesn't need to be an expert on a topic!
+				</p>
+			</section>
+			<section>
+				<h3>Where do I start?</h3>
+			</section>
+			<section>
+				<h3>Some definitions:</h3>
+				<ul>
+					<li class="fragment">Contributor: Person who did an action that helps a project (documentation, feature, bug
+						fix, reported issue&hellip;)</li>
+					<li class="fragment">Committer: Person who can decide which change request are incorporated into the project
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Some definitions:</h3>
+				<ul>
+					<li class="fragment">Upstream: Primary repository for an Open Source project</li>
+					<li class="fragment">Fork: Copy of a repository meant for writing changes and possibly contribute them back
+					</li>
+					<li class="fragment">Branch: Is a bifurcation of the state of the codebase, usually meant to build a feature
+						or fix a bug</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Identify your skills</h3>
+				<p>Find out your current strengths<span class="fragment">, but also what you want to improve or learn!</span>
+				</p>
+				<p class="fragment">Ideally, you should come up with your goals as well.</p>
+			</section>
+			<section>
+				<h3>Pick a project</h3>
+				<p>Short list some projects, and try to rank them by community friendliness.</p>
+			</section>
+			<section>
+				<h3>Good community</h3>
+				<p>Some factors that hint at a good community:</p>
+				<ul>
+					<li class="fragment">Plenty of contributors</li>
+					<li class="fragment">High activity in issues AND pull requests</li>
+					<li class="fragment">Number of open pull requests not too high nor too low (on the "tens")</li>
+					<li class="fragment">GitHub's community standards page (<a href="https://github.com/aiven/karapace/community"
+							target="_blank" rel="noopener noreferrer">Karapace</a>)</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Files to notice - License</h3>
+				<p>This file contains the text of the license of the project. Make sure it's an open source one.</p>
+			</section>
+			<section>
+				<h3>Files to notice - README</h3>
+				<p>In GitHub this file is directly displayed by default. This page should be descriptive and explain the
+					project.</p>
+			</section>
+			<section>
+				<h3>Files to notice - Code of conduct</h3>
+				<p>Recent addition to projects. This file is the contract from the project's leadership towards to community in
+					regards to behaviors that are not tolerated.</p>
+				<p>The most common one is the <a href="https://www.contributor-covenant.org/" target="_blank"
+						rel="noopener noreferrer">Contributor Covenant</a>.</p>
+			</section>
+			<section>
+				<h3>Files to notice - Contributing</h3>
+				<p>Most important file to read before contributing. In here the process describing how to contribute to the
+					project is described.</p>
+			</section>
+			<section>
+				<h3>Pick a task</h3>
+				<p>Read all the files mentioned before, and follow the described process to start working on an issue.</p>
+			</section>
+			<section>
+				<h3>Prepare to work</h3>
+				<ul>
+					<li class="fragment">Fork the repository</li>
+					<li class="fragment">Clone the repository on your machine</li>
+					<li class="fragment">Open your preferred IDE or text editor</li>
+					<li class="fragment">Install tooling needed</li>
+					<li class="fragment">Build the project and run tests</li>
+					<li class="fragment">Create a new branch</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Work on a task</h3>
+				<p>Write the feature, or fix the bug. And don't forget about writing tests! Check if you need to run linters or
+					style checkers.</p>
+				<p>Commit your work frequently!</p>
+			</section>
+			<section>
+				<h3>Submit your work</h3>
+				<p>Make sure you follow the rules described in <code>Contributing</code> before actually submitting your work.
+				</p>
+				<p><code>git push</code> the changes and create a pull request.</p>
+			</section>
+			<section>
+				<h3>Wait for reviews</h3>
+				<p>Now it's time to wait for contributors and committers to review your work and leave you feedback. Address
+					their feedback in a timely manner.</p>
+				<p>Many projects require 1 or 2 committers approving (LGTM) your changes.</p>
+			</section>
+			<section>
+				<h3>Congrats on your first PR!</h3>
+			</section>
+			<section>
+				<h3>But wait!</h3>
+				<p>It's not only about coding! Contributing to Open Source is also:</p>
+				<ul>
+					<li class="fragment">Writing bug reports and reproducers</li>
+					<li class="fragment">Answering questions on the chat (or discord, or forum&hellip;)</li>
+					<li class="fragment">Triage issues</li>
+					<li class="fragment">Review other's PRs</li>
+					<li class="fragment">Giving talks at meetups and conferences</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Extra legal agreements</h3>
+				<p>Some times projects might require extra agreements to sign to be able to contribute to the project.</p>
+			</section>
+			<section>
+				<h3>CLA</h3>
+				<p>Contributor License Agreement. This is a legal document to be (digitally) signed. It's usually done when the
+					project owners want more rights than the ones the license already grants. This might mean they want the full
+					copyright of the project or they want to dual license the project.</p>
+				<p>And example of CLA is the <a href="https://www.apache.org/licenses/icla.pdf" target="_blank"
+						rel="noopener noreferrer">Apache CLA V2.2</a></p>
+			</section>
+			<section>
+				<h3>DCO</h3>
+				<p><a href="https://developercertificate.org/" target="_blank" rel="noopener noreferrer">Developer Certificate
+						of Origin</a>. This is a statement from the person contributing stating they <b>do</b> have
+					the rights to contribute that code.</p>
+			</section>
+			<section data-background="images/metrics.jpg">
+				<div>
+					<center>
+						<h3 class="white_smoke_background">Open Source at Work?</h3>
+					</center>
+				</div>
+			</section>
+			<section>
+				<h3>Corporations use OSS?</h3>
+				<p>Yes! The question should not be if they use it, but how much.</p>
+				<p>Directly or indirectly, every workplace uses OSS.</p>
+			</section>
+			<section>
+				<h3>What about them producing OSS?</h3>
+				<p>There are 2 main ways:</p>
+				<ul>
+					<li class="fragment">1st party OSS - Internal projects</li>
+					<li class="fragment">3rd party OSS - External projects</li>
+				</ul>
+			</section>
+			<section>
+				<h3>1st party OSS</h3>
+				<p>This is the most common case of <b>outbound</b> contributions from corporations.</p>
+			</section>
+			<section>
+				<h3>But why?</h3>
+				<p>Why not keep it private and sell it? Some reasons might include:</p>
+				<ul>
+					<li class="fragment">It's not part of the core business</li>
+					<li class="fragment">For publicity / recruitment</li>
+					<li class="fragment">The project has the potential to transcend the initial expectations</li>
+				</ul>
+			</section>
+			<section>
+				<h3>So can I simply do OSS at work?</h3>
+				<p>It depends. You need to review your contract and talk to your manager, and usually you'd need some
+					convincing.</p>
+			</section>
+			<section>
+				<h3>How to finance this open source work?</h3>
+				<p>When it's not part of the core business, or open source collaborations main purpose are marketing or talent
+					acquisition, budget comes from said parts of the company.</p>
+			</section>
+			<section>
+				<h3>Monetize the convenience</h3>
+				<ul>
+					<li class="fragment">Is installation cumbersome?</li>
+					<li class="fragment">Is customization hard?</li>
+				</ul>
+				<p class="fragment">One can sell prepackaged solutions of open source projects.</p>
+			</section>
+			<section>
+				<h3>Monetize support</h3>
+				<p>Specific requirements will take precedence for customers with support.</p>
+			</section>
+			<section>
+				<h3>Monetize management</h3>
+				<p>Open Source projects are really specialized and they need a high degree of experience to operate them. This
+					caused the proliferation of "as a Service" companies (PaaS, SaaS, IaaS, &hellip;)</p>
+			</section>
+			<!-- <section>
+				<h3>Meet Aiven</h3>
+				<div>
+					<div style="width: 50%; float: right;">
+						<p>Aiven makes setting up cloud open source projects so simple anyone can do it.
+						Our set-it-and-forget-it solutions take the pain out of cloud data infrastructure.</p>
+					</div>
+					<div style="width: 50%;">
+						<img src="images/Aiven-new.png" alt="Aiven Products">
+					</div>
+				</div>
+				
+				<small class="disclaimer fragment"><em>All previous names are trademarks of their respective
+						owners.</em></small>
+			</section> -->
+			<section>
+				<img src="images/aiven-platform.png" alt="Aiven Platform" style="width: 90%;">
+			</section>
+			<section>
+				<h3>Not a zero-sum game</h3>
+				<p>Corporations and Open Source can collaborate and both benefit from it. It's not a zero-sum game!</p>
+				<ul>
+					<li class="fragment">Projects benefit from money, publicity and people</li>
+					<li class="fragment">Companies benefit from stable projects, publicity and reputation</li>
+				</ul>
+			</section>
+			<section data-background="images/together.jpg">
+				<div>
+					<center>
+						<h3 class="white_smoke_background">Join the Open Source journey!</h3>
+					</center>
+				</div>
+			</section>
+			<section>
+				<h3>Further reading:</h3>
+				<ul>
+					<li><a href="https://opensource.org" target="_blank" rel="noopener noreferrer">Open Source Initiative</a></li>
+					<li><a href="https://apache.org" target="_blank" rel="noopener noreferrer">Apache Software Foundation</a></li>
+					<li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+					<li><a href="https://aiven.io" target="_blank" rel="noopener noreferrer">Aiven.io</a></li>
+				</ul>
+			</section>
+			<section>
+				<h3>In case you need a Database...</h3>
+				<p>Aiven offers free plans for PostgreSQL, MySQL and Caching!</p>
+				<p>Read more <a href="https://docs.aiven.io/docs/platform/concepts/free-plan" target="_blank"
+						rel="noopener noreferrer">here</a>!
+				</p>
+			</section>
+			<section data-background="images/present.png">
+				<h3>And let's add some free credits!</h3>
+				<p>Use this link: <a class="" href="https://console.aiven.io/signup?referral_code=c7h9d4a5iaxv3kkj7nz8"
+						target="_blank" rel="noopener noreferrer">Extra Credits!</a>
+					<br />And get up to <b>$400</b> to spin up your clusters.
+
+				</p>
+				<img src="images/referral.svg" alt="https://console.aiven.io/signup?referral_code=c7h9d4a5iaxv3kkj7nz8">
+			</section>
+			<section>
+				<h1>Thanks!</h1>
+				<img src="images/nov2024.svg"
+					alt="https://jlprat.github.io/Open-Source-in-Professional-Software-Development/nov2024.html">
+				<p class="print-only">
+					<small>
+						Josep Prat &mdash; @jlprat &mdash; @aiven_io
+					</small>
+				</p>
+			</section>
+		</div>
+		<footer>
+			Josep Prat &mdash; @jlprat &mdash; @aiven_io
+		</footer>
+	</div>
+
+	<script src="reveal.js/dist/reveal.js"></script>
+	<script src="reveal.js/plugin/notes/notes.js"></script>
+	<script src="reveal.js/plugin/markdown/markdown.js"></script>
+	<script src="reveal.js/plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			slideNumber: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
